@@ -71,7 +71,7 @@ const UploadForm = ({ setParsedData, setAnalyzedCount, setLastFileName }) => {
       const formData = new FormData();
       formData.append("resume", file);
 
-      const response = await axios.post("https://resume-analyzer-backend-0y71.onrender.com/api/upload", formData);
+      const response = await axios.post("https://resume-analyzer-backend-sr9f.onrender.com/api/upload", formData);
       const result = response.data;
 
       if (result.success) {
